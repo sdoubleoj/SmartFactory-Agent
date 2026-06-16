@@ -50,5 +50,3 @@ dist/
 .idea/
 
 main.ipynb
-
-.env.example
