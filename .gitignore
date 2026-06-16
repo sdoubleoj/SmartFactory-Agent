@@ -1,0 +1,54 @@
+# =====================================================
+# Manufacturing AI Agent (test/) — .gitignore
+# =====================================================
+
+# --- 환경 변수 / 비밀 ---
+.env
+.env.*
+!.env.example
+
+# --- 실행 산출물 (LangGraph checkpoint, ChromaDB, 자체 long-term store) ---
+artifacts/
+**/chroma/
+*.sqlite
+*.sqlite-journal
+*.sqlite3
+*.sqlite3-shm
+*.sqlite3-wal
+*.db
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+ENV/
+
+# --- Jupyter ---
+.ipynb_checkpoints/
+
+# --- Cache / 분석 도구 ---
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# --- 빌드 산출물 ---
+build/
+dist/
+*.egg-info/
+
+# --- 로그 / OS / IDE ---
+*.log
+*.tmp
+.DS_Store
+.vscode/
+.idea/
+
+main.ipynb
+
+.env.example
